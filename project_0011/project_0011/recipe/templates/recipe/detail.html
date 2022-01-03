@@ -1,0 +1,11 @@
+
+<p>Name: {{ food.name }}</p>
+<p>Ingredients: {{food.ingredients}}</p>
+<p>Process: {{ food.process }}</p>
+<p>Created At: {{ food.created_at }}</p>
+<p>Modified At: {{ food.modified_at }}</p>
+
+<button><a href="{% url 'recipe:edit' food.id %}">Edit Recipe</a></button>
+<button><a href="{% url 'recipe:index' %}">Back</a></button><br>
+
+<a href="/recipe/logout/">Logout</a>

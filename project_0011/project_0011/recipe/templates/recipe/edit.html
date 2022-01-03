@@ -1,0 +1,10 @@
+<h6>Edit {{q.name}} Recipe details</h6>
+<form action="." method="post">
+    {% csrf_token %}
+    Recipe Name: <input type="text" name="recipe_name"><br>
+    Ingredients: <input type="text" name="ingredients"><br>
+    Process: <input type="text" name="process"><br>
+    <input type="submit" value="Save">
+</form>
+<br>
+<a href="/recipe/logout/">Logout</a>

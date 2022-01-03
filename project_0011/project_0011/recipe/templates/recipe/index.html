@@ -1,0 +1,9 @@
+<h4>Recipe's List</h4>
+<ul>
+    {% for food in recipes %}
+    <li><a href="{% url 'recipe:detail' food.id %}">{{ food.name }}</a></li>
+    {% endfor %}
+</ul>
+<button><a href="{% url 'recipe:create' %}">Create</a></button><br>
+
+<a href="/recipe/logout">Logout</a>

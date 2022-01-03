@@ -1,0 +1,11 @@
+{% if error %} {{ error }} {% endif %}
+
+<h2>Login</h2>
+
+<form action="." method="POST">
+    {% csrf_token %}
+    Username:<input type="text" name="username"><br>
+    Password:<input type="password" name="password"><br>
+    <input type="submit" value="login">
+</form>
+<a href="/recipe/register/">Register</a>
